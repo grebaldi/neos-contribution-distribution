@@ -1,0 +1,10 @@
+#!/usr/bin/php
+<?php declare(strict_types=1);
+
+$packages = [
+];
+
+foreach ($packages as $packagePath => $replacementPath) {
+    `rm -rf $packagePath`;
+    `ln -s $replacementPath $packagePath`;
+}

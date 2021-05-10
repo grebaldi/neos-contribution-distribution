@@ -12,7 +12,8 @@
         "neos/neos": "~7.0.0",
         "neos/neos-ui": "~7.0.0",
 
-        "vendor/site": "^1.0"
+        "vendor/site": "^1.0",
+        "flowpack/media-ui": "^0.5.0"
     },
     "require-dev": {
         "neos/buildessentials": "^7.0",

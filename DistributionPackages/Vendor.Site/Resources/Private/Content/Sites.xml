@@ -1,39 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-    <site name="Vendor.Site" state="1" siteResourcesPackageKey="Vendor.Site" siteNodeName="vendor-site">
-        <nodes formatVersion="2.0">
-            <node nodeName="vendor-site">
-                <variant
-                    workspace="live"
-                    nodeType="Vendor.Site:Document.HomePage"
-                    sortingIndex="100"
-                    version="1"
-                    removed=""
-                    hidden=""
-                    hiddenInIndex=""
-                    >
-                    <dimensions/>
-                    <accessRoles __type="array"/>
-                    <properties>
-                        <title __type="string">Vendor.Site</title>
-                        <uriPathSegment __type="string">vendor-site</uriPathSegment>
-                    </properties>
-                </variant>
-                <node nodeName="main">
-                    <variant
-                        workspace="live"
-                        nodeType="Neos.Neos:ContentCollection"
-                        sortingIndex="100"
-                        version="1"
-                        removed=""
-                        hidden=""
-                        hiddenInIndex=""
-                        >
-                        <dimensions/>
-                        <accessRoles __type="array" />
-                    </variant>
-                </node>
-            </node>
-        </nodes>
-    </site>
+ <site name="Vendor.Site" state="1" siteResourcesPackageKey="Vendor.Site" siteNodeName="vendor-site">
+  <nodes formatVersion="2.0">
+   <node identifier="7d1a814b-f19b-4801-8621-eb8889fe638b" nodeName="vendor-site">
+    <variant sortingIndex="100" workspace="live" nodeType="Vendor.Site:Document.HomePage" version="1" removed="" hidden="" hiddenInIndex="">
+     <dimensions/>
+     <accessRoles __type="array"/>
+     <creationDateTime __type="object" __classname="DateTime">2021-07-31T21:59:08+00:00</creationDateTime>
+     <lastModificationDateTime __type="object" __classname="DateTime">2021-07-31T21:59:08+00:00</lastModificationDateTime>
+     <properties>
+      <title __type="string">Vendor.Site</title>
+      <uriPathSegment __type="string">vendor-site</uriPathSegment>
+     </properties>
+    </variant>
+    <node identifier="ddbbe43c-41b4-fbbb-a698-e2616189dbae" nodeName="main">
+     <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="1" removed="" hidden="" hiddenInIndex="">
+      <dimensions/>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2021-07-31T21:59:08+00:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2021-07-31T21:59:08+00:00</lastModificationDateTime>
+      <properties/>
+     </variant>
+    </node>
+    <node identifier="036b0e4c-e931-56b9-db53-7b4a9c5ded26" nodeName="notfound">
+     <variant sortingIndex="200" workspace="live" nodeType="Vendor.Site:Document.Error404" version="1" removed="" hidden="" hiddenInIndex="1">
+      <dimensions/>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2021-07-31T22:08:29+00:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2021-07-31T22:08:29+00:00</lastModificationDateTime>
+      <properties>
+       <uriPathSegment __type="string">notfound</uriPathSegment>
+       <title __type="string">404</title>
+      </properties>
+     </variant>
+     <node identifier="29041bd3-d362-9c36-ec93-09f507c8790f" nodeName="main">
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="1" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2021-07-31T22:08:29+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2021-07-31T22:08:29+00:00</lastModificationDateTime>
+       <properties/>
+      </variant>
+     </node>
+    </node>
+   </node>
+  </nodes>
+ </site>
 </root>

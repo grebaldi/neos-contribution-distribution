@@ -1,0 +1,52 @@
+'Vendor.Site:Content.Text':
+  superTypes:
+    'Vendor.Site:Content': true
+
+    'Vendor.Site:AllowedIn.Document.HomePage.Main': true
+    'Vendor.Site:AllowedIn.Document.Page.Main': true
+    'Vendor.Site:AllowedIn.Document.Error404.Main': true
+
+  ui:
+    icon: align-left
+    label: 'Text'
+
+  properties:
+    text:
+      type: string
+      ui:
+        inlineEditable: true
+        inline:
+          editorOptions:
+            placeholder: '- Insert Text here -'
+            autoparagraph: true
+            linking:
+              anchor: true
+              title: true
+              relNofollow: true
+              targetBlank: true
+            formatting:
+              strong: true
+              em: true
+              u: true
+              sub: true
+              sup: true
+              del: true
+              p: true
+              h1: true
+              h2: true
+              h3: true
+              h4: true
+              h5: true
+              h6: true
+              pre: true
+              underline: true
+              strikethrough: true
+              removeFormat: true
+              left: true
+              right: true
+              center: true
+              justify: true
+              table: true
+              ol: true
+              ul: true
+              a: true

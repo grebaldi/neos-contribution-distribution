@@ -1,0 +1,39 @@
+'Vendor.Site:Document.Error404':
+  superTypes:
+    'Vendor.Site:Document': true
+
+  ui:
+    icon: exclamation-triangle
+    label: '404 - Not Found'
+
+  childNodes:
+    main:
+      type: 'Neos.Neos:ContentCollection'
+      constraints:
+        nodeTypes:
+          '*': false
+          'Neos.Neos:Content': false
+          'Vendor.Site:AllowedIn.Document.HomePage.Main': true
+
+  constraints:
+    nodeTypes:
+      '*': false
+      'Neos.Neos:Document': false
+      'Vendor.Site:AllowedBeneath.Document.Error404': true
+
+  properties:
+    title:
+      defaultValue: '404'
+    uriPathSegment:
+      ui:
+        inspector:
+          editorOptions:
+            disabled: true
+    _hiddenInIndex:
+      defaultValue: true
+
+'Vendor.Site:AllowedBeneath.Document.Error404':
+  abstract: true
+
+'Vendor.Site:AllowedIn.Document.Error404.Main':
+  abstract: true

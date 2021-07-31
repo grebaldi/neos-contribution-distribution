@@ -2,3 +2,6 @@
   superTypes:
     'Neos.Neos:Shortcut': true
     'Vendor.Site:Document': true
+
+    'Vendor.Site:AllowedBeneath.Document.HomePage': true
+    'Vendor.Site:AllowedBeneath.Document.Page': true

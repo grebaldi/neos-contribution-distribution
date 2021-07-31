@@ -22,7 +22,7 @@
                 <node nodeName="main">
                     <variant
                         workspace="live"
-                        nodeType="Vendor.Site:Collection.Content.Main"
+                        nodeType="Neos.Neos:ContentCollection"
                         sortingIndex="100"
                         version="1"
                         removed=""

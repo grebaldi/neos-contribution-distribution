@@ -1,10 +1,30 @@
 'Vendor.Site:Document.HomePage':
   superTypes:
-    'Vendor.Site:Document.Page': true
-    'Vendor.Site:Constraint.Document.Restricted': true
+    'Vendor.Site:Document': true
+
   ui:
     icon: globe
     label: i18n
+
   childNodes:
+    main:
+      type: 'Neos.Neos:ContentCollection'
+      constraints:
+        nodeTypes:
+          '*': false
+          'Neos.Neos:Content': false
+          'Vendor.Site:AllowedIn.Document.HomePage.Main': true
     notfound:
-      type: Vendor.Site:Document.Error.404
+      type: 'Vendor.Site:Document.Error404'
+
+  constraints:
+    nodeTypes:
+      '*': false
+      'Neos.Neos:Document': false
+      'Vendor.Site:AllowedBeneath.Document.HomePage': true
+
+'Vendor.Site:AllowedBeneath.Document.HomePage':
+  abstract: true
+
+'Vendor.Site:AllowedIn.Document.HomePage.Main':
+  abstract: true

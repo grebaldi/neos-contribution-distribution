@@ -2,10 +2,24 @@
   superTypes:
     'Vendor.Site:Document': true
 
+    'Vendor.Site:AllowedBeneath.Document.HomePage': true
+    'Vendor.Site:AllowedBeneath.Document.Page': true
+
   ui:
     icon: file
-    label: i18n
+    label: 'Page'
 
   childNodes:
     main:
-      type: 'Vendor.Site:Collection.Content.Main'
+      type: 'Neos.Neos:ContentCollection'
+      constraints:
+        nodeTypes:
+          '*': false
+          'Neos.Neos:Content': false
+          'Vendor.Site:AllowedIn.Document.Page.Main': true
+
+'Vendor.Site:AllowedBeneath.Document.Page':
+  abstract: true
+
+'Vendor.Site:AllowedIn.Document.Page.Main':
+  abstract: true

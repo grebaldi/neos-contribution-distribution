@@ -5,22 +5,21 @@
         "vendor-dir": "Packages/Libraries",
         "bin-dir": "bin",
         "platform": {
-            "php": "7.3"
+            "php": "7.2"
         }
     },
     "require": {
-        "neos/neos": "~7.1.0",
-        "neos/neos-ui": "~7.1.0",
+        "neos/neos": "~5.3.0",
+        "neos/neos-ui": "~5.3.0",
 
-        "vendor/site": "^1.0",
-        "flowpack/media-ui": "^0.5.0"
+        "vendor/site": "^1.0"
     },
     "require-dev": {
-        "neos/buildessentials": "^7.0",
+        "neos/buildessentials": "@dev",
         "mikey179/vfsstream": "^1.6",
-        "phpunit/phpunit": "^9.0",
+        "phpunit/phpunit": "^8.1",
         "symfony/css-selector": "~2.0",
-        "neos/behat": "^6.1"
+        "neos/behat": "@dev"
     },
     "suggest": {
         "ext-pdo_sqlite": "For running functional tests out-of-the-box this is required"

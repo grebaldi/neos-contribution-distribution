@@ -9,11 +9,11 @@
         }
     },
     "require": {
-        "neos/neos": "~7.1.0",
-        "neos/neos-ui": "~7.1.0",
+        "neos/neos": "^7.2",
+        "neos/neos-ui": "^7.2",
 
         "vendor/site": "^1.0",
-        "flowpack/media-ui": "^0.5.0"
+        "flowpack/media-ui": "^0.6.2"
     },
     "require-dev": {
         "neos/buildessentials": "^7.0",

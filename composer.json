@@ -6,17 +6,20 @@
         "bin-dir": "bin",
         "platform": {
             "php": "7.3"
+        },
+        "allow-plugins": {
+            "neos/composer-plugin": true
         }
     },
     "require": {
-        "neos/neos": "^7.2",
-        "neos/neos-ui": "^7.2",
+        "neos/neos": "~7.3.0",
+        "neos/neos-ui": "~7.3.0",
 
         "vendor/site": "^1.0",
         "flowpack/media-ui": "^0.6.2"
     },
     "require-dev": {
-        "neos/buildessentials": "^7.0",
+        "neos/buildessentials": "~7.3.0",
         "mikey179/vfsstream": "^1.6",
         "phpunit/phpunit": "^9.0",
         "symfony/css-selector": "~2.0",

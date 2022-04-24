@@ -1,0 +1,33 @@
+Neos:
+  ContentRepository:
+    contentDimensions:
+      language:
+        label: 'Language'
+        default: en_US
+        defaultPreset: en
+        presets:
+          en:
+            label: 'English (US)'
+            values:
+              - en_US
+            uriSegment: ''
+          de:
+            label: German
+            values:
+              - de
+            uriSegment: de
+      targetGroup:
+        label: 'Audience'
+        default: private
+        defaultPreset: private
+        presets:
+          private:
+            label: 'Private'
+            values:
+              - private
+            uriSegment: ''
+          sommelier:
+            label: Sommeliers
+            values:
+              - sommelier
+            uriSegment: sommelier

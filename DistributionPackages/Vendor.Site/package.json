@@ -1,0 +1,13 @@
+{
+  "name": "@vendor/site",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "pnpm build:css && pnpm build:js",
+    "build:css": "tailwindcss -i ./Resources/Private/Fusion/Root.css -o ./Resources/Public/Styles/main.min.css",
+    "build:js": "esbuild ./Resources/Private/Fusion/Root.js --bundle --outfile=./Resources/Public/JavaScript/main.min.js",
+    "watch": "concurrently \"pnpm watch:css\" \"pnpm watch:js\"",
+    "watch:css": "tailwindcss -i ./Resources/Private/Fusion/Root.css -o ./Resources/Public/Styles/main.min.css --watch",
+    "watch:js": "pnpm build:js --watch"
+  },
+  "dependencies": {}
+}

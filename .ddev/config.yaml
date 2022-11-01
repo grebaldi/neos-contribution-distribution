@@ -15,6 +15,9 @@ omit_containers: ["dba"]
 hooks:
   post-start:
     - exec: sudo echo alias ll=\"ls -lhA\" >> ~/.bashrc
+    - exec: corepack enable
+    - exec: corepack prepare pnpm@7.14.1 --activate
+    - exec: pnpm watch &
   post-composer:
     - exec: ./replace-packages
     - exec: ./flow flow:package:rescan

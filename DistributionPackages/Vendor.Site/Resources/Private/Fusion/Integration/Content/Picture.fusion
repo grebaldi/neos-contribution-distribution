@@ -1,0 +1,9 @@
+prototype(Vendor.Site:Content.Picture) < prototype(Neos.Neos:ContentComponent) {
+  renderer = Vendor.Site:Block.Picture {
+    src = Sitegeist.Kaleidoscope:AssetImageSource {
+      asset = ${q(node).property('image__src')}
+    }
+    alt = ${q(node).property('image__alt')}
+    title = ${q(node).property('image__title')}
+  }
+}

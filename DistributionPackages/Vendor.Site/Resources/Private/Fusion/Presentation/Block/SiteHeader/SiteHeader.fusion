@@ -1,0 +1,17 @@
+prototype(Vendor.Site:Block.SiteHeader) < prototype(Neos.Fusion:Component)  {
+  @styleguide {
+    title = 'Site Header'
+  }
+
+  renderer = afx`
+    <div
+      class={[
+        "h-full p-4",
+        "bg-indigo-700",
+        "text-neutral-100"
+      ]}
+    >
+      SITE HEADER
+    </div>
+  `
+}

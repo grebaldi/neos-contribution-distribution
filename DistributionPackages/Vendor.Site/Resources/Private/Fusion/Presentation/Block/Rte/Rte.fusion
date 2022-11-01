@@ -1,0 +1,11 @@
+prototype(Vendor.Site:Block.Rte) < prototype(Neos.Fusion:Component)  {
+  @styleguide {
+    title = 'Rich Text'
+  }
+
+  renderer = afx`
+    <div class="rte rte-slate">
+      {props.content}
+    </div>
+  `
+}

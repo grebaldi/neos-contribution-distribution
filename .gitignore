@@ -38,6 +38,7 @@ DistributionPackages/*/Resources/Public/Styles/
 
 .idea
 .vscode
+.pnpm-store
 
 custom.makefile
 docker-compose.override.y*ml

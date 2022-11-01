@@ -1,0 +1,9 @@
+prototype(Sitegeist.Monocle:Preview.Page) {
+  head {
+    metaViewport = '<meta name="viewport" content="width=device-width">'
+    stylesheets = Vendor.Site:Resource.StyleSheets
+  }
+
+  bodyScripts = Vendor.Site:Resource.BodyScripts
+  bodyScripts.@position = 'before closingBodyTag'
+}

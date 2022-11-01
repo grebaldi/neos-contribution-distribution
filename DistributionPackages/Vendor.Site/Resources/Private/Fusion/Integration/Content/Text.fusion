@@ -1,11 +1,9 @@
 prototype(Vendor.Site:Content.Text) < prototype(Neos.Neos:ContentComponent) {
-    text = Neos.Neos:Editable {
-        property = 'text'
-    }
+  text = Neos.Neos:Editable {
+    property = 'text'
+  }
 
-    renderer = afx`
-        <div>
-            {props.text}
-        </div>
-    `
+  renderer = Vendor.Site:Block.Wysiwyg {
+    content = ${props.text}
+  }
 }

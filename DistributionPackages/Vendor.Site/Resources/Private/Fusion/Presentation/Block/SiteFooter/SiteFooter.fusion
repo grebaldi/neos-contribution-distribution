@@ -1,0 +1,17 @@
+prototype(Vendor.Site:Block.SiteFooter) < prototype(Neos.Fusion:Component)  {
+  @styleguide {
+    title = 'Site Footer'
+  }
+
+  renderer = afx`
+    <div
+      class={[
+        "h-full p-4",
+        "bg-slate-900",
+        "text-zinc-400"
+      ]}
+    >
+      SITE FOOTER
+    </div>
+  `
+}

@@ -15,7 +15,9 @@
         "neos/neos": "~8.0.0",
         "neos/neos-ui": "~8.0.0",
 
-        "vendor/site": "^1.0"
+        "vendor/site": "^1.0",
+        "sitegeist/kaleidoscope": "^6.5",
+        "sitegeist/monocle": "^7.5"
     },
     "require-dev": {
         "neos/buildessentials": "~8.0.0",

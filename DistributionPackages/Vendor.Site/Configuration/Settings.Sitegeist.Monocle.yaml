@@ -1,0 +1,18 @@
+Sitegeist:
+  Monocle:
+    ui:
+      structure:
+        block:
+          position: 100
+          match: :Block\.
+          label: Block
+          icon: icon-cube
+          color: "#D3ECA7"
+        layout:
+          position: 100
+          match: :Layout\.
+          label: Layout
+          icon: icon-columns
+          color: "#A1B57D"
+    hiddenPrototypeNamePatterns:
+      - "Sitegeist.Kaleidoscope:*"

@@ -1,0 +1,24 @@
+prototype(Vendor.Site:Layout.Page) < prototype(Neos.Fusion:Component) {
+  @styleguide {
+    title = 'Page'
+  }
+
+  renderer = afx`
+    <div
+      class={[
+        "grid grid-flow-row grid-rows-[100px_minmax(1vh,_1fr)_100px]",
+        "min-h-screen"
+      ]}
+    >
+      <header class="">
+        {props.header}
+      </header>
+      <main class="">
+        {props.main}
+      </main>
+      <footer>
+        {props.footer}
+      </footer>
+    </div>
+  `
+}

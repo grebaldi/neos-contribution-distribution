@@ -1,0 +1,46 @@
+"Vendor.Site:Content.Picture":
+  superTypes:
+    "Vendor.Site:Content": true
+
+    "Vendor.Site:AllowedIn.Document.HomePage.Main": true
+    "Vendor.Site:AllowedIn.Document.Page.Main": true
+    "Vendor.Site:AllowedIn.Document.Error404.Main": true
+
+  ui:
+    icon: image
+    label: "Picture"
+    inspector:
+      groups:
+        picture:
+          icon: image
+          label: Picture Settings
+
+  properties:
+
+    image__src:
+      type: Neos\Media\Domain\Model\ImageInterface
+      ui:
+        showInCreationDialog: true
+        label: "Picture Source"
+        inspector:
+          group: picture
+          editorOptions:
+            features:
+              crop: true
+              resize: true
+
+    image__alt:
+      type: string
+      ui:
+        showInCreationDialog: true
+        label: "Alternative Text"
+        inspector:
+          group: picture
+
+    image__title:
+      type: string
+      ui:
+        showInCreationDialog: true
+        label: "Title"
+        inspector:
+          group: picture

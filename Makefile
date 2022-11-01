@@ -48,10 +48,10 @@ cleanup::
 #                               FRONTEND BUILD                                #
 ###############################################################################
 build::
-	@ddev yarn build
+	@ddev pnpm build
 
 watch::
-	@ddev yarn watch
+	@ddev pnpm watch
 
 ###############################################################################
 #                                  DDEV                                     #

@@ -4,7 +4,9 @@
     "version": "1.0.0",
     "require": {
         "neos/neos": "*",
-        "neos/nodetypes-basemixins": "*"
+        "neos/nodetypes-basemixins": "*",
+        "sitegeist/kaleidoscope": "*",
+        "sitegeist/monocle": "*"
     },
     "autoload": {
         "psr-4": {

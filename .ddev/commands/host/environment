@@ -7,4 +7,4 @@
 ddev version
 ddev exec 'php --version | head -n 1'
 ddev exec 'echo Node $(node --version)'
-ddev exec 'echo Yarn $(yarn --version)'
+ddev exec 'echo Pnpm $(pnpm --version)'

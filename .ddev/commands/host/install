@@ -6,6 +6,6 @@
 
 mkdir -p Data/Logs
 ddev composer install
-ddev yarn
+ddev pnpm install
 ddev composer flush
 ddev build

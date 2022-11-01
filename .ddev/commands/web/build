@@ -4,4 +4,4 @@
 ## Usage: build
 ## Example: "ddev build"
 
-yarn build
+pnpm build

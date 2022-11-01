@@ -1,0 +1,7 @@
+#!/bin/bash
+
+## Description: Deletes the project incl. database
+## Usage: prune
+## Example: "ddev prune"
+
+ddev delete --omit-snapshot

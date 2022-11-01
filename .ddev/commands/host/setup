@@ -1,0 +1,13 @@
+#!/bin/bash
+
+## Description: Initially sets up the project
+## Usage: setup
+## Example: "ddev setup"
+
+ddev start
+ddev install
+ddev flow site:prune "'*'" || true
+ddev flow user:delete "'*'" --assume-yes || true
+ddev flow site:import Vendor.Site
+ddev flow user:create --roles Administrator admin admin admin admin
+ddev describe

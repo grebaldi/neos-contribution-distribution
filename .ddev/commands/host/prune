@@ -4,4 +4,8 @@
 ## Usage: prune
 ## Example: "ddev prune"
 
+ddev cleanup
+echo "🗑 Removing pnpm virtual store"
+rm -rf ./pnpm-store
+
 ddev delete --omit-snapshot

@@ -4,4 +4,4 @@
 ## Usage: watch
 ## Example: "ddev watch"
 
-yarn watch
+pnpm watch

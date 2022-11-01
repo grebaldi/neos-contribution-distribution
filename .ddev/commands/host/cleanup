@@ -4,10 +4,10 @@
 ## Usage: cleanup
 ## Example: "ddev cleanup"
 
-# Composer & PHP related
+echo "🗑 Removing Composer & PHP related directories"
 rm -rf ./Data/Temporary/*
 rm -rf ./Packages/*
 rm -rf ./bin/*
 
-# Node related
+echo "🗑 Removing Node related directories"
 rm -rf ./node_modules

@@ -40,17 +40,6 @@
             "./flow flow:package:rescan",
             "./flow doctrine:migrate",
             "./flow resource:publish"
-        ],
-
-        "cleanup:php": [
-            "rm -rf ./Data/Temporary/*",
-            "rm -rf ./Packages/*",
-            "rm -rf ./bin/*"
-        ],
-
-        "clone": [
-            "./flow clone:list",
-            "./flow clone:preset"
         ]
     },
     "repositories": {

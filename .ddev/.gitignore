@@ -27,3 +27,4 @@ commands/web/live
 nginx_full/
 /docker-compose.custom.yaml
 providers/
+xhprof/
